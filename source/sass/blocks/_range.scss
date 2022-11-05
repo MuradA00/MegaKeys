@@ -1,0 +1,8 @@
+.range {
+  &__info {
+    padding-top: clamp(40px, 5.3125vw, 85px);
+    @include max-width($main-media) {
+      padding-top: 0;
+    }
+  }
+}

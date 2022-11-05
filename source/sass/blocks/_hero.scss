@@ -1,0 +1,28 @@
+.hero {
+  &__info {
+    @include max-width($main-media) {
+      text-align: center;
+    }
+    padding-top: clamp(40px, 5.3125vw, 85px);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: clamp(18px, 1.875vw, 30px);
+  }
+  &__descr {
+    font-size: clamp(14px, 0.9375vw, 15px);
+  }
+  &__btn {
+    @include max-width($main-media) {
+      margin-inline: auto;
+    }
+  }
+}
+
+@include max-width($main-media) {
+  .hero {
+    &__info {
+      padding-top: 0;
+    }
+  }
+}

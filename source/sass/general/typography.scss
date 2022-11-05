@@ -1,0 +1,13 @@
+._def-title {
+  font-weight: 600;
+  font-size: clamp(18px, 1.5625vw, 25px);
+  line-height: 121.192%;
+  @include max-width($main-media) {
+    text-align: center;
+  }
+}
+
+._def-descr {
+  line-height: 121.93%;
+  font-size: clamp(14px, 0.9375vw, 15px);
+}

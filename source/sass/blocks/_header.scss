@@ -1,0 +1,15 @@
+.header {
+  padding: 19px 0px 0px 0px;
+  &__body {
+    padding: 0px 27px;
+    box-shadow: var(--header-shadow);
+    @include dfcs;
+    border-radius: var(--border-radius-20);
+    padding-bottom: 15px;
+  }
+  &__logo {
+    img {
+      height: 100%;
+    }
+  }
+}
