@@ -12,7 +12,7 @@
   --border-radius-20: 20px;
   // spacing
   --section-spacing: clamp(100px, 8.125vw, 130px);
-  --grid-spacing: clamp(45px, 8.4375vw, 135px);
+  --grid-spacing: clamp(25px, 8.4375vw, 135px);
   --spacing-20: 1.25rem;
   // shadow
     --header-shadow:  0px 4px 20px 0px #0000001A;
@@ -35,7 +35,7 @@ $main-media: 62.5em;
   }
 }
 
-.raw-gap {
+.row-gap {
   grid-gap: var(--grid-spacing);
 }
 

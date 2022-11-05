@@ -1,0 +1,13 @@
+.prices {
+  &__image {
+    @include max-width($main-media) {
+      max-width: 400px;
+    }
+  }
+  &__info {
+    padding-top: clamp(90px, 10.9375vw, 170px);
+    @include max-width($main-media) {
+      padding-top: 0;
+    }
+  }
+}

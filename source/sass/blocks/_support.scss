@@ -1,0 +1,8 @@
+.support {
+  &__info {
+    padding-top: clamp(70px, 8.4375vw, 135px);
+    @include max-width($main-media) {
+      padding-top: 0;
+    }
+  }
+}

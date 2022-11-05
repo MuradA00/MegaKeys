@@ -1,0 +1,8 @@
+.clarity {
+  &__info {
+    padding-top: clamp(80px, 9vw, 143px);
+    @include max-width($main-media) {
+      padding-top: 0;
+    }
+  }
+}
