@@ -3,13 +3,13 @@
   &__body {
     padding: 0px 27px;
     @include max-width($main-media) {
-      padding: 0 10px;
-      padding-bottom: 15px;
+      padding: 0 20px;
+      padding-bottom: 10px;
     }
     box-shadow: var(--header-shadow);
     @include dfcs;
     border-radius: var(--border-radius-20);
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
   &__logo {
     img {
@@ -24,7 +24,7 @@
   }
   .header {
     &__logo {
-      max-width: 90px;
+      max-width: 70px;
     }
   }
 }

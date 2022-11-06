@@ -1,0 +1,50 @@
+.footer {
+  margin-bottom: 25px;
+  &__body {
+    padding: 30px 1.71875rem 2.9375rem 1.71875rem;
+    box-shadow: 0px 4px 20px 0px #0000001A;
+    border-radius: var(--border-radius-20);
+    background-color: var(--clr-black);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(16.5625rem, 10rem));
+    justify-content: space-between;
+    & > * {
+      color: var(--footer-text);
+    }
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+  }
+  &__heading {
+    font-size: clamp(1rem, 1.25vw, 20px);
+    font-weight: 600;
+  }
+  &__info {
+    display: grid;
+    grid-gap: 15px;
+    p {
+      font-size: clamp(14px, .9375vw, 15px);
+      font-weight: 300;
+    }
+  }
+}
+
+@include max-width($main-media) {
+  .footer {
+    &__body {
+      grid-template-columns: repeat(2, 14rem);
+      justify-content: space-around;
+      grid-gap: 2rem;
+    }
+  }
+}
+
+@include max-width(35.625em) {
+  .footer {
+    &__body {
+      grid-template-columns: 100%;
+    }
+  }
+}

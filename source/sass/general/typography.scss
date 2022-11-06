@@ -10,4 +10,7 @@
 ._def-descr {
   line-height: 121.93%;
   font-size: clamp(14px, 0.9375vw, 15px);
+  @include max-width($main-media) {
+    max-width: 23.875rem;
+  }
 }

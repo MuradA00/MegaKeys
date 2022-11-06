@@ -24,5 +24,13 @@
     &__info {
       padding-top: 0;
     }
+      &__title {
+        max-width: 18.75rem;
+      }
+    &__descr {
+      max-width: 15.625rem;
+      margin-inline: auto;
+    }
   }
 }
+
