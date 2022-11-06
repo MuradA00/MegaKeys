@@ -14,3 +14,11 @@
     max-width: 23.875rem;
   }
 }
+
+._sec-title {
+  font-size: clamp(18px, 1.25vw, 20px);
+  font-weight: 700;
+  @include max-width($main-media) {
+    text-align: center;
+  }
+}

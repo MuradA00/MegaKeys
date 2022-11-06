@@ -33,9 +33,12 @@
 
 @include max-width($main-media) {
   .footer {
+    &__container {
+      max-width: calc(650px + clamp(15px,1.25vw,20px));
+    }
     &__body {
       grid-template-columns: repeat(2, 14rem);
-      justify-content: space-around;
+      justify-content: space-evenly;
       grid-gap: 2rem;
     }
   }
@@ -45,6 +48,7 @@
   .footer {
     &__body {
       grid-template-columns: 100%;
+      padding: 1rem;
     }
   }
 }

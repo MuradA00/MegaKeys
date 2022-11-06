@@ -15,7 +15,9 @@
   --grid-spacing: clamp(25px, 8.4375vw, 135px);
   --spacing-20: 1.25rem;
   // shadow
-    --header-shadow:  0px 4px 20px 0px #0000001A;
+  --header-shadow:  0px 4px 20px 0px #0000001A;
+  --block-shadow: 0px 4px 20px 0px #0000001A;
+
 }
 
 $main-media: 62.5em;
@@ -84,4 +86,22 @@ $main-media: 62.5em;
   }
 }
 
-
+.heading-block {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 11.25rem;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  box-shadow: 0px 4px 20px 0px #0000001A;
+  border-radius: var(--border-radius-20);
+  font-size: clamp(20px, 1.875vw, 30px);
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: var(--block-shadow);
+  margin-bottom: 30px;
+  @include max-width($main-media) {
+    min-height: 4.575rem;
+  }
+}

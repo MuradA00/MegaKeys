@@ -22,8 +22,12 @@ html {
   box-sizing: border-box;
 }
 
-main {
+.main {
   padding: clamp(50px, 7.75vw, 124px) 0px clamp(50px, 8.125vw, 130px) 0px;
+}
+
+.sec-main {
+  padding: 1.875rem 0 clamp(1.875rem, 6.25vw, 100px) 0;
 }
 
 * {
