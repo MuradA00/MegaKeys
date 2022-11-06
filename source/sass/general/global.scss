@@ -138,11 +138,11 @@ $mainContainerPadding: clamp(15px, 1.25vw, 20px);
 
 * {
   scrollbar-color: #EDF3F6;
-
   &::-webkit-scrollbar {
     width: 6px;
     box-shadow: none;
     height: 100%;
+    display: none;
   }
 
   &::-webkit-scrollbar-thumb {

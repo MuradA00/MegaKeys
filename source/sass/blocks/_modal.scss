@@ -14,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   &__body {
     max-width: 47.8125rem;
@@ -26,7 +27,7 @@
     opacity: 0;
     transform: translateY(20px);
     transition: all 400ms ease .35s;
-
+    overflow: hidden;
   }
   &__heading {
     display: flex;
@@ -44,6 +45,7 @@
     overflow: auto;
     display: grid;
     grid-gap: 22px;
+    // overflow: scroll;
     p {
       font-size: clamp(14px, .9375vw, 15px);
     }
