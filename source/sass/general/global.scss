@@ -140,30 +140,27 @@ $mainContainerPadding: clamp(15px, 1.25vw, 20px);
   scrollbar-color: #EDF3F6;
 
   &::-webkit-scrollbar {
-    width: 9px;
+    width: 6px;
     box-shadow: none;
     height: 100%;
-    display: none;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #3C93F0;
-    border-radius: 4px;
+    background-color: hsla(227, 73%, 63%, 1);
+    border-radius: 2px;
     background-clip: padding-box;
-    border: 2px solid #EDF3F6;
     box-shadow: none;
-
-    &:hover {
-      cursor: pointer;
-    }
+    width: 4px;
   }
 
   &::-webkit-scrollbar-track {
-    background-color:#EDF3F6;
+    background-color:hsla(0, 0%, 85%, 1);
     cursor: pointer;
     border-radius: 6px;
     box-shadow: none;
     height: 100%;
+    width: 4px;
+    border: 2px solid var(--clr-body)
   }
 
   ::-webkit-scrollbar-button {

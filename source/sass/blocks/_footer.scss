@@ -29,6 +29,15 @@
       font-weight: 300;
     }
   }
+  button {
+    color: var(--footer-text);
+    font-size: clamp(14px, .9375vw, 15px);
+    font-weight: 300;
+    &:nth-child(1) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @include max-width($main-media) {
