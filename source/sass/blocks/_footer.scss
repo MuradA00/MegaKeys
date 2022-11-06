@@ -38,6 +38,19 @@
       margin-bottom: 20px;
     }
   }
+  &__email {
+    background-color: #FFFFFF;
+    display: flex;
+    border-radius: 20px;
+    input {
+      border-radius: 20px;
+      padding: 12px 10px;
+    }
+    button {
+      font-weight: 500;
+      color: #FFFFFF;
+    }
+  }
 }
 
 @include max-width($main-media) {
@@ -58,6 +71,9 @@
     &__body {
       grid-template-columns: 100%;
       padding: 1rem;
+    }
+    &__email {
+      max-width: 265px;
     }
   }
 }
